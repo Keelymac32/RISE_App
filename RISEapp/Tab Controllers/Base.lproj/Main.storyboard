@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7BW-8d-tHQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Apparat-Heavy.otf">
+            <string>Apparat-Heavy</string>
+        </array>
+        <array key="Apparat-Light.otf">
+            <string>Apparat-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Keelyn-->
+        <scene sceneID="yZG-mJ-KtC">
+            <objects>
+                <tabBarController title="Keelyn" automaticallyAdjustsScrollViewInsets="NO" id="7BW-8d-tHQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NUq-zW-XKh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZM6-75-SYx"/>
+                        <segue destination="Ghv-1V-WIY" kind="relationship" relationship="viewControllers" id="7hJ-7X-Bgv"/>
+                        <segue destination="Rfe-rh-GRJ" kind="relationship" relationship="viewControllers" id="chf-ta-WUJ"/>
+                        <segue destination="qNm-r8-Yaf" kind="relationship" relationship="viewControllers" id="jB4-Tx-bSS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIm-HL-YkY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135" y="82"/>
+        </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="CaW-Uk-2xN">
+            <objects>
+                <viewController storyboardIdentifier="Alert" id="Ypj-Qq-pEp" customClass="AlertViewController" customModule="RISEapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="alertID" id="i19-Kg-UNi" customClass="Alert">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7aC-46-qpp">
+                                <rect key="frame" x="60" y="309" width="294" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ERROR DEVICE NOT SUPPORTED " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCh-ts-w7s">
+                                        <rect key="frame" x="15" y="54" width="281" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Apparat-Heavy" family="Apparat" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uPG-Hr-Qb9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWu-Da-3dv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556.52173913043487" y="87.723214285714278"/>
+        </scene>
+        <!--Recovery-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Recovery" id="BYZ-38-t0r" customClass="RecoveryViewController" customModule="RISEapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="642-sL-qqF">
+                                <rect key="frame" x="123.5" y="48" width="167.5" height="37"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Recovery">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="37" name="Apparat-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="feP-E8-Msb">
+                                <rect key="frame" x="47" y="99" width="320" height="34.5"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resting Heart Rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XH-tu-j4s">
+                                <rect key="frame" x="27" y="165" width="162" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apparat-Heavy" family="Apparat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Heart Rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1d-EX-VQg">
+                                <rect key="frame" x="27" y="231" width="162" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apparat-Heavy" family="Apparat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Max Heart Rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dq-Ms-hjm">
+                                <rect key="frame" x="27" y="199" width="133" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apparat-Heavy" family="Apparat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="feP-E8-Msb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GVC-YS-PfA"/>
+                            <constraint firstItem="642-sL-qqF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HVe-JB-MPL"/>
+                            <constraint firstItem="642-sL-qqF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iMQ-Q6-l1G"/>
+                            <constraint firstItem="feP-E8-Msb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="rJD-Ig-5Gk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="R" image="moon.zzz" catalog="system" id="FbI-3o-cef">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="804"/>
+        </scene>
+        <!--Sleep Quality View Controller-->
+        <scene sceneID="pEw-Dy-7xa">
+            <objects>
+                <viewController id="Nxd-G7-Lvi" customClass="SleepQualityViewController" customModule="RISEapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AiA-dx-F8E" customClass="Sleep">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xua-eq-O1f">
+                                <rect key="frame" x="20" y="268" width="374" height="379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="43Q-H2-bpK">
+                                        <rect key="frame" x="22" y="60" width="319" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">On a scale of 1 - 10 rank your quality of sleep. 1 representes about 10% of the night you were asleep while 10 represents 100% of the night you were asleep.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="Apparat-Light" family="Apparat" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGn-Am-bf6">
+                                        <rect key="frame" x="22" y="176" width="325" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How Well Did You Sleep Last Night?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zc-jF-OrP">
+                                        <rect key="frame" x="22" y="8" width="330" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Apparat-Heavy" family="Apparat" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0xa-Ce-1kJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TDk-Ng-wwI"/>
+                    <connections>
+                        <outlet property="sleepPicker" destination="pGn-Am-bf6" id="GzV-uC-ha9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRl-PM-CIl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681.15942028985512" y="1426.3392857142856"/>
+        </scene>
+        <!--Intensity-->
+        <scene sceneID="z8m-CK-GFs">
+            <objects>
+                <viewController title="Intensity" id="Ghv-1V-WIY" customClass="IntensityViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dy0-Ra-gRU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2s-Cb-8sv">
+                                <rect key="frame" x="124" y="48" width="166" height="37"/>
+                                <fontDescription key="fontDescription" name="Apparat-Heavy" family="Apparat" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-Wn-53H">
+                                <rect key="frame" x="47" y="99" width="320" height="34.5"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0v-lG-xpn">
+                                <rect key="frame" x="170" y="431" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O1s-nv-Ju1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2ay-Wn-53H" firstAttribute="centerX" secondItem="dy0-Ra-gRU" secondAttribute="centerX" id="40V-cW-j1X"/>
+                            <constraint firstItem="r2s-Cb-8sv" firstAttribute="top" secondItem="O1s-nv-Ju1" secondAttribute="top" id="I2S-su-J6n"/>
+                            <constraint firstItem="2ay-Wn-53H" firstAttribute="top" secondItem="O1s-nv-Ju1" secondAttribute="top" constant="51" id="dwT-kz-Toh"/>
+                            <constraint firstItem="r2s-Cb-8sv" firstAttribute="centerX" secondItem="dy0-Ra-gRU" secondAttribute="centerX" id="gbz-n4-rmq"/>
+                            <constraint firstItem="2ay-Wn-53H" firstAttribute="centerX" secondItem="dy0-Ra-gRU" secondAttribute="centerX" id="kvU-BG-47Q"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="I" image="dumbbell.fill" catalog="system" id="Xge-kt-IV5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6CS-6y-CA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="804"/>
+        </scene>
+        <!--Strain-->
+        <scene sceneID="Mzc-8F-L5s">
+            <objects>
+                <viewController title="Strain" id="Rfe-rh-GRJ" customClass="StrainViewController" customModule="RISEapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y7I-yW-5rY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x92-dL-J5y">
+                                <rect key="frame" x="153" y="48" width="108" height="37"/>
+                                <fontDescription key="fontDescription" name="Apparat-Heavy" family="Apparat" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="f27-Bx-sFT">
+                                <rect key="frame" x="47" y="99" width="320" height="34.5"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R88-xS-bXq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f27-Bx-sFT" firstAttribute="centerX" secondItem="Y7I-yW-5rY" secondAttribute="centerX" id="FNY-2f-J3B"/>
+                            <constraint firstItem="f27-Bx-sFT" firstAttribute="top" secondItem="R88-xS-bXq" secondAttribute="top" constant="51" id="Hvm-F1-d8Y"/>
+                            <constraint firstItem="x92-dL-J5y" firstAttribute="top" secondItem="R88-xS-bXq" secondAttribute="top" id="Uk0-uR-Uyt"/>
+                            <constraint firstItem="x92-dL-J5y" firstAttribute="centerX" secondItem="Y7I-yW-5rY" secondAttribute="centerX" id="wQC-r9-zpv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="S" image="figure.walk.motion" catalog="system" id="bWi-7T-PGG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J21-lr-Shj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="796"/>
+        </scene>
+        <!--Evaluation-->
+        <scene sceneID="bfP-Ka-iah">
+            <objects>
+                <viewController title="Evaluation" id="qNm-r8-Yaf" customClass="EvaluationViewController" customModule="RISEapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qSQ-uH-wxs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evaluation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGS-3m-v6A">
+                                <rect key="frame" x="111.5" y="48" width="191.5" height="37"/>
+                                <fontDescription key="fontDescription" name="Apparat-Heavy" family="Apparat" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="I6a-1C-vJy">
+                                <rect key="frame" x="47" y="99" width="320" height="34.5"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="drw-Ih-2XK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nGS-3m-v6A" firstAttribute="top" secondItem="drw-Ih-2XK" secondAttribute="top" id="1ug-ba-tpF"/>
+                            <constraint firstItem="I6a-1C-vJy" firstAttribute="top" secondItem="drw-Ih-2XK" secondAttribute="top" constant="51" id="91z-Ay-5nv"/>
+                            <constraint firstItem="I6a-1C-vJy" firstAttribute="centerX" secondItem="qSQ-uH-wxs" secondAttribute="centerX" id="d9V-pY-4Nn"/>
+                            <constraint firstItem="nGS-3m-v6A" firstAttribute="centerX" secondItem="qSQ-uH-wxs" secondAttribute="centerX" id="ndF-YV-3Md"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="E" image="person" catalog="system" id="nnD-kF-rql"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4GX-V0-tqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1382.608695652174" y="796.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dumbbell.fill" catalog="system" width="128" height="72"/>
+        <image name="figure.walk.motion" catalog="system" width="128" height="112"/>
+        <image name="moon.zzz" catalog="system" width="117" height="128"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
